@@ -1,0 +1,33 @@
+w1="aaa"
+w2="a"
+t="aab"
+w="abcdefghijklmnopqrstuvwxyz"
+l1=[]
+l2=[]
+l3=[]
+l4=[]
+for i in w1:
+    l1.append(w.index(i))
+print(l1)
+for i in w2:
+    l2.append(w.index(i))
+print(l2)
+print(l1+l2)
+for i in range(len(l2)):
+    l3.append(l1[i]+l2[i])
+print(l3)
+for i in t:
+    l4.append(w.index(i))
+print(l4)
+if l3==l4:
+    print("t")
+else:
+    print("f")
+...................................................................................................................
+Output:
+[0, 0, 0]
+[0]
+[0, 0, 0, 0]
+[0]
+[0, 0, 1]
+f
