@@ -1,0 +1,33 @@
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+long long som(int k,int n){
+    int m=(n-1)/k;
+    return k*(long long)m*(m+1)/2;
+}
+int main(){
+    int t; 
+    scanf("%d",&t);
+    for(int a0 = 0; a0 < t; a0++){
+        int n,sum=0; 
+        scanf("%d",&n);
+        long long res1=som(3,n);
+        long long res2=som(5,n);
+        long long res3=som(15,n);
+        printf("%lld\n",res1+res2-res3);
+    }
+    return 0;
+}
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+OUTPUT:
+    Input (stdin)
+    testcases=2
+        n=10
+        n=100
+    Your Output (stdout)
+        23
+        2318
